@@ -1,4 +1,5 @@
 import ColumnComponet from "./Components/ColumnComponent";
+import InputTextComponent from "./Components/InputTextComponent";
 import RowComponent from "./Components/RowComponent";
 import TextComponent from "./Components/TextComponent";
 import View from "./Components/ViewComponent";
@@ -12,7 +13,8 @@ export default function App() {
       <Text>{fullName}</Text> */}
       {/* <ColumnComponet /> */}
     {/* <RowComponent /> */}
-    <TextComponent  />
+    {/* <TextComponent  /> */}
+    <InputTextComponent />
     </>
     
   );
