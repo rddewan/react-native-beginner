@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { TextInput, StyleSheet, View, Text } from "react-native"
 
 const InputTextComponent = () => {
     const [name, setName] = useState();
     const [age, setAge] = useState(0);
     const [bio, setBio] = useState('');
+    const ageRef =  useRef();
 
     return (
         <View style={styles.container}>
@@ -19,6 +20,7 @@ const InputTextComponent = () => {
                 //defaultValue="Name"
                 value={name}
                 onChangeText={setName}
+                onSubmitEditing={() => ageRef.current.focus()}
             />
 
             <View style={{ height: 8 }} />
@@ -30,8 +32,9 @@ const InputTextComponent = () => {
                 inputMode="numeric"
                 returnKeyType="next"
                 //defaultValue="Name"
-                value={age}
+                value={age.toString()}
                 onChangeText={setAge}
+                ref={ageRef}
             />
 
             <View style={{ height: 8 }} />
