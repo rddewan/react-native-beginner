@@ -1,4 +1,5 @@
 import ColumnComponet from "./Components/ColumnComponent";
+import ImageComponent from "./Components/ImageComponent";
 import InputTextComponent from "./Components/InputTextComponent";
 import RowComponent from "./Components/RowComponent";
 import TextComponent from "./Components/TextComponent";
@@ -14,7 +15,8 @@ export default function App() {
       {/* <ColumnComponet /> */}
     {/* <RowComponent /> */}
     {/* <TextComponent  /> */}
-    <InputTextComponent />
+    {/* <InputTextComponent /> */}
+    <ImageComponent />
     </>
     
   );
