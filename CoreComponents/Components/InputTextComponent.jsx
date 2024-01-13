@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { TextInput, StyleSheet, View, Text } from "react-native"
+import { TextInput, StyleSheet, View, Text, Platform } from "react-native"
 
 const InputTextComponent = () => {
     const [name, setName] = useState();
@@ -51,7 +51,7 @@ const InputTextComponent = () => {
                 //defaultValue="Name"
                 value={bio}
                 onChangeText={setBio}
-                editable={false}
+                editable={true}
             />
 
         </View>
@@ -81,6 +81,8 @@ const styles = StyleSheet.create({
         borderColor: '#544d4d',
         borderRadius: 8,
         padding: 8,
-        width: '100%',       
+        width: '100%',   
+        textAlignVertical: 'top',
+        height: Platform.OS === 'ios' ? 100 :  null,    
     }
 });
