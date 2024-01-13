@@ -1,3 +1,4 @@
+import ButtonComponent from "./Components/ButtonComponent";
 import ColumnComponet from "./Components/ColumnComponent";
 import ImageComponent from "./Components/ImageComponent";
 import InputTextComponent from "./Components/InputTextComponent";
@@ -16,7 +17,8 @@ export default function App() {
     {/* <RowComponent /> */}
     {/* <TextComponent  /> */}
     {/* <InputTextComponent /> */}
-    <ImageComponent />
+    {/* <ImageComponent /> */}
+    <ButtonComponent />
     </>
     
   );
