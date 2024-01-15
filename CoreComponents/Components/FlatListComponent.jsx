@@ -93,8 +93,23 @@ const FlatListComponent = () => {
     }
 
     return (
+        // <FlatList
+        //     style={{ marginTop: 100 }}
+        //     data={DATA}
+        //     renderItem={({ item, index, separators }) =>
+        //         <View style={styles.card} >
+        //             <Text style={styles.title}>{item.title}</Text>
+        //             <Text style={styles.description}>{item.description}</Text>
+        //         </View>
+        //     }
+        //     keyExtractor={item => item.id}
+        //     refreshing={refreshing}
+        //     onRefresh={onRefresh}
+        // />
+
         <FlatList
             style={{ marginTop: 100 }}
+            horizontal={true}
             data={DATA}
             renderItem={({ item, index, separators }) =>
                 <View style={styles.card} >
@@ -127,6 +142,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.25,
         shadowRadius: 8,
+        height: 200
     },
     title: {
         fontSize: 20,
