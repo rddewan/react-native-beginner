@@ -3,6 +3,7 @@ import ColumnComponet from "./Components/ColumnComponent";
 import ImageComponent from "./Components/ImageComponent";
 import InputTextComponent from "./Components/InputTextComponent";
 import RowComponent from "./Components/RowComponent";
+import ScrollViewComponent from "./Components/ScrollViewComponent";
 import TextComponent from "./Components/TextComponent";
 import View from "./Components/ViewComponent";
 import { fullName } from "./Components/ViewComponent";
@@ -18,7 +19,8 @@ export default function App() {
     {/* <TextComponent  /> */}
     {/* <InputTextComponent /> */}
     {/* <ImageComponent /> */}
-    <ButtonComponent />
+    {/* <ButtonComponent /> */}
+    <ScrollViewComponent />
     </>
     
   );
