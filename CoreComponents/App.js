@@ -1,5 +1,6 @@
 import ButtonComponent from "./Components/ButtonComponent";
 import ColumnComponet from "./Components/ColumnComponent";
+import FlatListComponent from "./Components/FlatListComponent";
 import ImageComponent from "./Components/ImageComponent";
 import InputTextComponent from "./Components/InputTextComponent";
 import RowComponent from "./Components/RowComponent";
@@ -20,7 +21,8 @@ export default function App() {
     {/* <InputTextComponent /> */}
     {/* <ImageComponent /> */}
     {/* <ButtonComponent /> */}
-    <ScrollViewComponent />
+    {/* <ScrollViewComponent /> */}
+    <FlatListComponent />
     </>
     
   );
