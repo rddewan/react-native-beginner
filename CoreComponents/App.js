@@ -6,6 +6,7 @@ import InputTextComponent from "./Components/InputTextComponent";
 import LoadingComponent from "./Components/LoadingComponent";
 import RowComponent from "./Components/RowComponent";
 import ScrollViewComponent from "./Components/ScrollViewComponent";
+import SwitchComponent from "./Components/SwitchComponent";
 import TextComponent from "./Components/TextComponent";
 import View from "./Components/ViewComponent";
 import { fullName } from "./Components/ViewComponent";
@@ -24,7 +25,8 @@ export default function App() {
     {/* <ButtonComponent /> */}
     {/* <ScrollViewComponent /> */}
     {/* <FlatListComponent /> */}
-    <LoadingComponent />
+    {/* <LoadingComponent /> */}
+    <SwitchComponent />
     </>
     
   );
