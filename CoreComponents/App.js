@@ -1,3 +1,4 @@
+import BackgroundImageComponent from "./Components/BackgroundImageComponent";
 import ButtonComponent from "./Components/ButtonComponent";
 import ColumnComponet from "./Components/ColumnComponent";
 import FlatListComponent from "./Components/FlatListComponent";
@@ -26,7 +27,8 @@ export default function App() {
     {/* <ScrollViewComponent /> */}
     {/* <FlatListComponent /> */}
     {/* <LoadingComponent /> */}
-    <SwitchComponent />
+    {/* <SwitchComponent /> */}
+    <BackgroundImageComponent />
     </>
     
   );
