@@ -3,6 +3,7 @@ import ColumnComponet from "./Components/ColumnComponent";
 import FlatListComponent from "./Components/FlatListComponent";
 import ImageComponent from "./Components/ImageComponent";
 import InputTextComponent from "./Components/InputTextComponent";
+import LoadingComponent from "./Components/LoadingComponent";
 import RowComponent from "./Components/RowComponent";
 import ScrollViewComponent from "./Components/ScrollViewComponent";
 import TextComponent from "./Components/TextComponent";
@@ -22,7 +23,8 @@ export default function App() {
     {/* <ImageComponent /> */}
     {/* <ButtonComponent /> */}
     {/* <ScrollViewComponent /> */}
-    <FlatListComponent />
+    {/* <FlatListComponent /> */}
+    <LoadingComponent />
     </>
     
   );
