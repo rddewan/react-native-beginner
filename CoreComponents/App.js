@@ -5,6 +5,7 @@ import FlatListComponent from "./Components/FlatListComponent";
 import ImageComponent from "./Components/ImageComponent";
 import InputTextComponent from "./Components/InputTextComponent";
 import LoadingComponent from "./Components/LoadingComponent";
+import PressableComponent from "./Components/PressableComponent";
 import RowComponent from "./Components/RowComponent";
 import SafeAreaViewComponet from "./Components/SafeAreaViewComponet";
 import ScrollViewComponent from "./Components/ScrollViewComponent";
@@ -30,7 +31,8 @@ export default function App() {
     {/* <LoadingComponent /> */}
     {/* <SwitchComponent /> */}
     {/* <BackgroundImageComponent /> */}
-    <SafeAreaViewComponet />
+    {/* <SafeAreaViewComponet /> */}
+    <PressableComponent />
     </>
     
   );
