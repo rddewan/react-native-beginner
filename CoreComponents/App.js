@@ -33,8 +33,9 @@ export default function App() {
     {/* <SwitchComponent /> */}
     {/* <BackgroundImageComponent /> */}
     {/* <SafeAreaViewComponet /> */}
-    {/* <PressableComponent /> */}
-    <ModalComponent />
+    <PressableComponent />
+    
+   
     </>
     
   );

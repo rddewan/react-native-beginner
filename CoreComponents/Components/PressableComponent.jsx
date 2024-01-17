@@ -1,28 +1,31 @@
-
-import { View, Text, Pressable, StyleSheet } from 'react-native';
-
+import { StyleSheet, Text, View, Pressable } from 'react-native'
 const PressableComponent = () => {
-
     function onPress() {
-        console.log('Pressable Component');
+        console.log("Button Pressed");
     }
 
     return (
         <View style={styles.container}>
-            <Pressable style={styles.button} onPress={onPress} onLongPress={() => console.log('Long Press')}>
+            <Pressable style={styles.button}
+                onPress={onPress}
+                onLongPress={() => console.log("Long Pressed")}
+                onPressIn={() => console.log("In")}
+                onPressOut={() => console.log("Out")}
+            >
                 <Text>Pressable Component</Text>
             </Pressable>
         </View>
-    );
-}
+    )
 
+}
 export default PressableComponent;
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
+        padding: 16,
         alignItems: 'center',
+        justifyContent: 'center',
     },
     button: {
         alignItems: 'center',
