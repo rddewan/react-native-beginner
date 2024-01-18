@@ -10,6 +10,7 @@ import PressableComponent from "./Components/PressableComponent";
 import RowComponent from "./Components/RowComponent";
 import SafeAreaViewComponet from "./Components/SafeAreaViewComponet";
 import ScrollViewComponent from "./Components/ScrollViewComponent";
+import SectionListComponent from "./Components/SectionListComponent";
 import SwitchComponent from "./Components/SwitchComponent";
 import TextComponent from "./Components/TextComponent";
 import View from "./Components/ViewComponent";
@@ -33,7 +34,9 @@ export default function App() {
     {/* <SwitchComponent /> */}
     {/* <BackgroundImageComponent /> */}
     {/* <SafeAreaViewComponet /> */}
-    <PressableComponent />
+    {/* <PressableComponent /> */}
+    {/* <ModalComponent /> */}
+    <SectionListComponent />
     
    
     </>
