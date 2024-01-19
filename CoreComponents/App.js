@@ -17,6 +17,7 @@ import View from "./Components/ViewComponent";
 import { fullName } from "./Components/ViewComponent";
 import { Text } from "react-native";
 import VirtualizedListComponent from "./Components/VirtualizedListComponent";
+import RefreshControlComponent from "./Components/RefreshControlComponent";
 
 export default function App() {
   return (
@@ -38,7 +39,8 @@ export default function App() {
     {/* <PressableComponent /> */}
     {/* <ModalComponent /> */}
     {/* <SectionListComponent /> */}
-    <VirtualizedListComponent />
+    {/* <VirtualizedListComponent /> */}
+    <RefreshControlComponent />
     
    
     </>

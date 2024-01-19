@@ -10,15 +10,15 @@ const BoxComponent = () => {
 export default BoxComponent;
 
 const styles = StyleSheet.create({
-    // container: {
-    //     height: 100,
-    //     width: "100%",
-    //     backgroundColor: 'red',
-    // }
     container: {
         height: 100,
-        width: 100,
+        width: "100%",
         backgroundColor: 'red',
     }
+    // container: {
+    //     height: 100,
+    //     width: 100,
+    //     backgroundColor: 'red',
+    // }
     
 })
