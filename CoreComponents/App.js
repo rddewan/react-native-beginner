@@ -16,6 +16,7 @@ import TextComponent from "./Components/TextComponent";
 import View from "./Components/ViewComponent";
 import { fullName } from "./Components/ViewComponent";
 import { Text } from "react-native";
+import VirtualizedListComponent from "./Components/VirtualizedListComponent";
 
 export default function App() {
   return (
@@ -36,7 +37,8 @@ export default function App() {
     {/* <SafeAreaViewComponet /> */}
     {/* <PressableComponent /> */}
     {/* <ModalComponent /> */}
-    <SectionListComponent />
+    {/* <SectionListComponent /> */}
+    <VirtualizedListComponent />
     
    
     </>
