@@ -18,6 +18,7 @@ import { fullName } from "./Components/ViewComponent";
 import { Text } from "react-native";
 import VirtualizedListComponent from "./Components/VirtualizedListComponent";
 import RefreshControlComponent from "./Components/RefreshControlComponent";
+import KeyboardAvoidingViewComponent from "./Components/KeyboardAvoidingViewComponent";
 
 export default function App() {
   return (
@@ -40,7 +41,8 @@ export default function App() {
     {/* <ModalComponent /> */}
     {/* <SectionListComponent /> */}
     {/* <VirtualizedListComponent /> */}
-    <RefreshControlComponent />
+    {/* <RefreshControlComponent /> */}
+    <KeyboardAvoidingViewComponent />
     
    
     </>
