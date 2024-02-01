@@ -16,7 +16,7 @@ function AppNavigation() {
     <Stack.Navigator>
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Setting" component={SettingScreen} />
-      <Stack.Screen name="Profile" component={ProfileScreen} />
+      <Stack.Screen name="Profile" component={ProfileScreen} initialParams={{id: 10, name: 'Richard'}}/>
     </Stack.Navigator>
     
   );
