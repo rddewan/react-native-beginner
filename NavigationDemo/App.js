@@ -8,6 +8,7 @@ import HomeScreen from './screens/HomeScreen';
 import SettingScreen from './screens/SettingScrren';
 import ProfileScreen from './screens/ProfileScreen';
 import BottomTavNavigationComponent from './components/navigation/BottomTabNavigationComponent';
+import DrawerNavigatorComponent from './components/navigation/DrawerNavigationComponent';
 
 
 const Stack  = createStackNavigator();
@@ -27,7 +28,8 @@ export default function App() {
   return (
     <NavigationContainer>
       {/* <AppNavigation /> */}
-      <BottomTavNavigationComponent />
+      {/* <BottomTavNavigationComponent /> */}
+      <DrawerNavigatorComponent />
     </NavigationContainer>
   );
 }
