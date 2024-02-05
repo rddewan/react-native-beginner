@@ -9,3 +9,5 @@
 * npx expo start
 * npm install @react-navigation/drawer
 * npx expo install react-native-gesture-handler react-native-reanimated
+* npm install @react-navigation/material-top-tabs react-native-tab-view
+* npx expo install react-native-pager-view
