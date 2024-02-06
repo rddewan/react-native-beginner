@@ -6,6 +6,7 @@ import Constants from 'expo-constants';
 import ChatScreen from '../../screens/toptabs/ChatScreen';
 import CallScreen from '../../screens/toptabs/CallScreen';
 import GroupScreen from '../../screens/toptabs/GroupScreen';
+import HomeScreen from '../../screens/HomeScreen';
 
 
 const ToTap = createMaterialTopTabNavigator();
@@ -15,14 +16,19 @@ const TopTabNavigationComponet = () => {
         <ToTap.Navigator       
             screenOptions={({ route }) => ({      
                 tabBarStyle: {
-                    marginTop: Constants.statusBarHeight,
+                    //marginTop: Constants.statusBarHeight,
                 },  
                 tabBarLabelStyle: {
                     textTransform: 'capitalize'
                 },    
                 tabBarIcon: ({ focused, color, size }) => {
                     let iconName;
-                    if (route.name === 'Chat') {
+                    if (route.name === 'Home') {
+                        iconName = focused
+                            ? 'home-outline'
+                            : 'home';
+                    }
+                    else if (route.name === 'Chat') {
                         iconName = focused
                             ? 'home-outline'
                             : 'home';
@@ -38,6 +44,7 @@ const TopTabNavigationComponet = () => {
                 
             })}
         >
+            <ToTap.Screen name="Home" component={HomeScreen} />
             <ToTap.Screen name="Chat" component={ChatScreen} />
             <ToTap.Screen name="Call" component={CallScreen} />
             <ToTap.Screen name="Group" component={GroupScreen} />

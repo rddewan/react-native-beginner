@@ -3,6 +3,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 import AboutUs from "../../screens/drawer/AboutUs";
 import ContactUs from "../../screens/drawer/ContactUs";
+import StackNavigationComponent from "./StackNavigationComponent";
 
 const Drawer = createDrawerNavigator();
 
@@ -12,7 +13,12 @@ const DrawerNavigatorComponent = () => {
         screenOptions={({ route }) => ({
             drawerIcon: ({ focused, color, size }) => {
                 let iconName;
-                if (route.name === 'AboutUs') {
+                if (route.name === 'StackNavigation') {
+                    iconName = focused
+                        ? 'home'
+                        : 'home';
+                }
+                else if (route.name === 'AboutUs') {
                     iconName = focused
                         ? 'location-history'
                         : 'location-on';
@@ -25,6 +31,9 @@ const DrawerNavigatorComponent = () => {
             
         })}
         >
+        <Drawer.Screen name="StackNavigation" component={StackNavigationComponent} 
+            options={{drawerLabel: 'Home', headerTitle: ''}}
+        />
         <Drawer.Screen name="AboutUs" component={AboutUs} />
         <Drawer.Screen name="ContactUs" component={ContactUs} />
         </Drawer.Navigator>

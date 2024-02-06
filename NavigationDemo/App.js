@@ -18,8 +18,8 @@ export default function App() {
     <NavigationContainer>
       {/* <AppNavigation /> */}
       {/* <BottomTavNavigationComponent /> */}
-      {/* <DrawerNavigatorComponent /> */}
-      <TopTabNavigationComponent />
+      <DrawerNavigatorComponent />
+      {/* <TopTabNavigationComponent /> */}
     </NavigationContainer>
   );
 }
